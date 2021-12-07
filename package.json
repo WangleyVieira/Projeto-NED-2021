@@ -1,0 +1,32 @@
+{
+  "name": "projeto-negritude",
+  "version": "1.0.0",
+  "description": "desenvolvimento do projeto em NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node server.js",
+    "start": "babel-node /server.js"
+  },
+  "author": "Wangley Vieira",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^5.1.3",
+    "express": "^4.16.3",
+    "init": "^0.1.2",
+    "jquery": "^3.6.0",
+    "path": "^0.12.7",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "popper": "^1.0.1",
+    "pug": "^3.0.2",
+    "sequelize": "^6.12.0-alpha.1",
+    "sequelize-cli": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

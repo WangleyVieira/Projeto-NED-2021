@@ -1,0 +1,142 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/css/estilo.css')
+    link(rel='stylesheet' href='/bscss/bootstrap.min.css')
+    // Bootstrap CSS
+    
+    style.
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+    // Custom styles for this template
+    link(href='css/estiloequipe.css', rel='stylesheet')
+    title Nossa Equipe
+  body
+    header
+      nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+        .container-fluid
+          a.navbar-brand
+            img(src='img/LOGO_NED.png', alt='', width='80')
+          button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarCollapse.collapse.navbar-collapse
+            ul.navbar-nav.me-auto.mb-2.mb-md-0
+              li.nav-item
+                a.nav-link(aria-current='page', href='paginaInicial.html') P&aacute;gina Inicial
+              li.nav-item
+                a.nav-link(aria-current='page', href='#') Projeto Negritude em Debate
+              li.nav-item
+                a.nav-link(href='#') Mostra Fotogr&aacute;fica
+              li.nav-item
+                a.nav-link(href='') Contatos
+            //
+              <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+    main
+      h1 Nossa Equipe
+      .container.marketing
+        // Three columns of text below the carousel
+        .row
+          .col-lg-4
+            img.rounded-circle(src='img/fabio.jpg', alt='', width='200px')
+            h2 F&aacute;bio Luiz Faria da Silva
+            p
+              | F&aacute;bio Luiz Faria da Silva
+              | Possui gradua&ccedil;&atilde;o em Engenharia da Computa&ccedil;&atilde;o, especializa&ccedil;&atilde;o em Doc&ecirc;ncia e Licenciatura Pedag&oacute;gica em Hist&oacute;ria. Atualmente &eacute; professor efetivo no IFMS na &aacute;rea de Desenvolvimento/Desenvolvimento Web e membro do NEABI. &Eacute; ativista em movimentos sociais e amante das artes, em especial, a m&uacute;sica
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          // /.col-lg-4
+          .col-lg-4
+            img.rounded-circle(src='img/AnaPaula.jpg', alt='', width='50%')
+            h2 Ana Paula Archanjo Batarce
+            p
+              | Ana Paula Archanjo Batarce, mulher, preta, m&atilde;e, feminista, sindicalista, pesquisadora, professora e doutora em Geografia. Trabalha na Universidade Federal do Mato Grosso do Sul. Militante da luta antirracista e apaixonada pela di&aacute;spora Africana, pela popula&ccedil;&atilde;o afro-brasileira e sua diversidade. Coordenadora do projeto de extens&atilde;o Negritude em Debate.
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          // /.col-lg-4
+          .col-lg-4
+            img.rounded-circle(src='img/Cafola.jpg', alt='', width='50%')
+            h2 Diego Aparecido Cafola
+            p
+              | Cafola tem experi&ecirc;ncia como docente do Ensino M&eacute;dio em escola rural (CEPA), em projetos para utiliza&ccedil;&atilde;o dos recursos naturais como acr&eacute;scimo na subsist&ecirc;ncia (UFMS) nas comunidades rurais (ribeirinhos, quilombolas e assentamentos) no Mato Grosso do Sul (MS) e com pesquisa dentro das Unidades de Conserva&ccedil;&atilde;o (UC) pelo Centro de Estudos em Meio Ambiente, &Aacute;reas Protegidas e Desenvolvimento Sustent&aacute;vel (CEMAP/UEMS).
+              | Desde 2016 trabalha como pesquisadora cultural, utilizando a perspectiva decolonial no direcionamento da encruzilhada entre g&ecirc;nero, sexo, ra&ccedil;a e classe de sujeitos subalternizados. Tem gradua&ccedil;&atilde;o em Turismo e Hist&oacute;ria, especialista em Hist&oacute;ria da Am&eacute;rica e Mestre em Estudos Culturais.
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          .col-lg-4
+            img.rounded-circle(src='img/Thamires.jpg', alt='', width='50%')
+            h2 Thamires
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          .col-lg-4
+            img.rounded-circle(src='img/Eliane.jpg', alt='', width='50%')
+            h2 Eliane Cristina de S&aacute;
+            p
+              | Eliane Cristina de S&aacute;. Acad&ecirc;mica em Geografia licenciatura-UFMS/CPAQ, ilustradora, membro do projeto Negritude em debate MS.
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          .col-lg-4
+            img.rounded-circle(src='img/Francisco.jpg', alt='', width='50%')
+            h2 Francisco Givanildo dos Santos
+            p
+              | Professor da Educa&ccedil;&atilde;o B&aacute;sica (Estadual e Municipal), h&aacute; 27 anos. Formado em Licenciatura Plena em Hist&oacute;ria, Especializa&ccedil;&atilde;o em Hist&oacute;ria da Am&eacute;rica Latina e Mestrado em Educa&ccedil;&atilde;o. Representante sindical de base e atuante na luta da categoria pela valoriza&ccedil;&atilde;o profissional e militante dos movimentos sociais, em especial na pauta dos direitos humanos.
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          .col-lg-4
+            img.rounded-circle(src='img/Alessandro.jpeg', alt='', width='50%')
+            h2 Alessandro Riquelme Ribeiro
+            p
+              | Professor da Educa&ccedil;&atilde;o B&aacute;sica (Estadual e Municipal), h&aacute; 27 anos. Formado em Licenciatura Plena em Hist&oacute;ria, Especializa&ccedil;&atilde;o em Hist&oacute;ria da Am&eacute;rica Latina e Mestrado em Educa&ccedil;&atilde;o. Representante sindical de base e atuante na luta da categoria pela valoriza&ccedil;&atilde;o profissional e militante dos movimentos sociais, em especial na pauta dos direitos humanos.
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          .col-lg-4
+            img.rounded-circle(src='img/Jussara.jpg', alt='', width='50%')
+            h2 Jussara Le&atilde;o Balbueno
+            p
+              | Jussara Le&atilde;o Balbueno. Graduada em Letras-UFMS/CPAQ, mestranda em Estudos Culturais-PPGCult/UFMS, membro do grupo de pesquisa Lindecult-PPGCult/UFMS, membro Neabi-IFMS/Aquidauana, membro do projeto Negritude em Debate.
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          .col-lg-4
+            img.rounded-circle(src='img/Roberto.jpg', alt='', width='50%')
+            h2 Roberto Pereira de Freitas Neto
+            p
+              | Meu nome &eacute; Roberto Pereira de Freitas Neto, mas todo mundo me chama s&oacute; de Neto. Tenho 15 anos e estou cursando Inform&aacute;tica l&aacute; no IFMS. Sou bolsista do projeto Negritude em Debate, no qual fa&ccedil;o parte da equipe de produ&ccedil;&atilde;o audiovisual. Tamb&eacute;m fa&ccedil;o pesquisas sobre os quilombolas aqui do MS e ajudo o projeto no que puder aqui =).
+            // <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          //
+            <div class="col-lg-4">
+            <img src="img/Roberto.jpg" alt="" width="50%" class="rounded-circle">
+            <h2>Sabrina</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+            </p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div>
+        // /.row
+      // /.container
+      hr.featurette-divider
+      // FOOTER
+      footer.container
+        p.float-end
+          a(href='#') Voltar para topo
+        p
+          | &copy; 2021 &middot; 
+          a(href='#') Privacy
+          |  
+          img(src='img/logo_ifms_fund_preto.jpeg', width='10%')
+          |  
+          img(src='img/ufms_logo_negativo_pb_rgb.png', width='10%')
+          |  
+          img(src='img/neabi.png', width='10%')
+          | &middot; 
+          a(href='#')
+    // Option 1: Bootstrap Bundle with Popper
+    script(src='/jquery/jquery.slim.min.js')
+    script(src='/popperjs/popper.min.js')
+    script(src='/bsjs/bootstrap.min.js')

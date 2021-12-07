@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // Bootstrap CSS
+    link(rel='stylesheet' href='/bscss/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/login.css')
+    title Login
+  body
+    .container
+      .row.content
+        .col-md-6
+          img.img-fluid(src='/img/capa.jpg', alt='image')
+        .col-md-6.mb-3
+          .col-md-6
+            h3.signin-text.mb-3 Entrar
+            form
+              .form-group
+                label(for='email') Email
+                input.form-control(type='email', name='email')
+              .form-group
+                label(for='password') Password
+                input.form-control(type='password', name='password')
+              //
+                <div class="form-group form-check">
+                <input type="checkbox" name="checkbox" class="form-check-input" id="checkbox">
+                <label class="form-check-label" for="checkbox">Remember Me</label>
+                </div>
+              //
+                <button class="btn btn-success">Login</button>
+                <button class="btn btn-primary">Cadastrar</button>
+          button.btn.btn-success Login
+          button.btn.btn-primary Cadastrar
+      
+      script(src='/jquery/jquery.slim.min.js')
+      script(src='/popperjs/popper.min.js')
+      script(src='/bsjs/bootstrap.min.js')
