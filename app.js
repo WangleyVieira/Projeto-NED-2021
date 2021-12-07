@@ -11,10 +11,11 @@ app.use('/bscss', express.static('./node_modules/bootstrap/dist/css'));
 app.use('/bsjs', express.static('./node_modules/bootstrap/dist/js'));
 app.use('/jquery', express.static('./node_modules/jquery/dist'));
 app.use('/popperjs', express.static('./node_modules/@popperjs/core/dist/umd'));
-app.use('/estilo', express.static('./views/css'));
-app.use('/imagem', express.static('./views/img'));
+app.use('/estilo', express.static('./views/css')); //rotas de css
+app.use('/imagem', express.static('./views/img')); //rota de imagens
 
-app.use(express.static(path.join(__dirname, 'static')));
+
+app.use('/login', express.static('./views/'));
 
 // app.use('', express.static(__dirname + ''));
 /**
