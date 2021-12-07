@@ -10,8 +10,9 @@ const app = express();
 app.use('/bscss', express.static('./node_modules/bootstrap/dist/css'));
 app.use('/bsjs', express.static('./node_modules/bootstrap/dist/js'));
 app.use('/jquery', express.static('./node_modules/jquery/dist'));
-app.use('/popperjs', express.static('./node_modules/popper.js/dist/umd'));
-
+app.use('/popperjs', express.static('./node_modules/@popperjs/core/dist/umd'));
+app.use('/estilo', express.static('./views/css'));
+app.use('/imagem', express.static('./views/img'));
 
 app.use(express.static(path.join(__dirname, 'static')));
 
@@ -41,8 +42,8 @@ app.get('/test', function(req, resp){
 // /**
 //  * Rotas
 //  */
-//  const routes = require('./routers');
-//  routes(app);
+ const routes = require('./API/routers');
+ routes(app);
 
 
 

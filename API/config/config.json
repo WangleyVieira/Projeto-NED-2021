@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "postgres",
-    "password": "wangleymsv",
-    "database": "Projeto-NED",
+    "password": "postgres",
+    "database": "lp3superior",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
