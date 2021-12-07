@@ -16,7 +16,8 @@ app.use('/imagem', express.static('./views/img')); //rota de imagens
 
 
 app.use('/login', express.static('./views/'));
-
+app.use('/ConhecerEquipe', express.static('./views/'));
+app.use('/PaginaInicial', express.static('./views/'));
 // app.use('', express.static(__dirname + ''));
 /**
  * Configuração da página 
@@ -49,11 +50,11 @@ app.get('/test', function(req, resp){
 
 
 //pagina inicial
-app.get('/paginaInicial', function(req, resp){
+app.get('/PaginaInicial', function(req, resp){
     resp.render('paginaInicial')
 });
 //Conheca Nossa Equipe
-app.get('/conhecaEquipe', function(req, resp){
+app.get('/ConhecerEquipe', function(req, resp){
     resp.render('conhecaEquipe')
 });
 //Login
