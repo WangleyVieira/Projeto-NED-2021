@@ -1,0 +1,140 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/estilo/estilo.css')
+
+    link(rel='stylesheet' href='/bscss/bootstrap.min.css')
+
+    style.
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+
+    title Apresentan&ccedil;&atilde;o do Projeto
+  body
+    header
+      nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+        .container-fluid
+          a.navbar-brand
+            img(src='/imagem/LOGO_NED.png', alt='', width='80')
+          button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarCollapse.collapse.navbar-collapse
+            ul.navbar-nav.me-auto.mb-2.mb-md-0
+              li.nav-item
+                a.nav-link(aria-current='page', href='paginaInicial.html') P&aacute;gina Inicial
+              li.nav-item
+                a.nav-link(aria-current='page', href='#') Projeto Negritude em Debate
+              li.nav-item
+                a.nav-link(href='#') Mostra Fotogr&aacute;fica
+              li.nav-item
+                a.nav-link(href='') Contatos
+              li.nav-item
+                a.nav-link(href='conhecaEquipe.html') Conhe&ccedil;a nossa equipe
+            //
+              <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+    main
+      // START THE FEATURETTES
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading Negritude em Debate
+          p.lead
+            | O projeto &ldquo;Negritude em Debate MS&rdquo; (Cpaq/UFMS &ndash; Neabi/IFMS/CG) tem objetivo contribuir para reflex&atilde;o, para valoriza&ccedil;&atilde;o da cultura negra no Mato Grosso do Sul, assim como, contribuir para o desenvolvimento da tem&aacute;tica &quot;Hist&oacute;ria da &Aacute;frica e Cultura Afro-brasileira&quot; nas escolas da rede b&aacute;sica de ensino, nos Institutos Federais do Mato Grosso do Sul (IFMS) e na Universidade Federal do Mato Grosso do Sul (UFMS). Para isso, elaborar material audiovisual para ser trabalhado nas institui&ccedil;&otilde;es p&uacute;blicas (rede b&aacute;sica de ensino, IFMS e UFMS); Dialogar com os professores por meio de oficinas/cursos/palestras e outras atividades que estejam ligadas ao tema da ra&ccedil;a e do g&ecirc;nero. Dentre elas, a mostra fotogr&aacute;fica intitulada &ldquo;Beleza Negra Resiste&rdquo;, oficina de pintura org&acirc;nica e Oficina pedag&oacute;gica. O foco do material audiovisual &eacute; de trabalhar com as Comunidades Quilombolas de Mato Grosso do Sul, entre elas, Comunidade Negra Rural Quilombola da Furna dos Baianos (Aquidauana/MS), a Comunidade Remanescente de Quilombos Tia Eva (CG) e a Furnas do Dion&iacute;sio (CG).
+        .col-md-5
+          .ratio.ratio-16x9
+            iframe(src='https://www.youtube.com/embed/B16z2gs6Fn8', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7.order-md-2
+          h2.featurette-heading Mostra Fotogr&aacute;fica Beleza Negra Resiste 2020
+          p.lead
+            | O projeto tem como objetivo visibilizar corporeidades outras que se apresentam fora do padr&atilde;o est&eacute;tico europeu, como a beleza, a cultura e a ancestralidade negra existentes no Mato Grosso do Sul e que foram historicamente apagadas. Permitindo com isso que esses sujeitos sociais, negras e negros, se auto identifiquem e consigam romper com as estruturas col&ocirc;nias e racistas que persistem ainda no s&eacute;culo XXI.
+        .col-md-5.order-md-1
+          .ratio.ratio-16x9
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/SBe5tBAVY_Y', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading Palestras, oficinas e capacita&ccedil;&atilde;o antirracista 
+          p.lead
+            | Como um dos direcionamentos do projeto &eacute; o di&aacute;logo com/na comunidade escolar, al&eacute;m das atividades externas &agrave; escola, como a Mostra fotogr&aacute;fica e o document&aacute;rio, nossa equipe tamb&eacute;m se disponibiliza para dialogar diretamente com alunos e/ou professores e coordenadores por meio de palestras, oficinas e capacita&ccedil;&otilde;es voltadas para educa&ccedil;&atilde;o antirracista.
+        .col-md-5
+          .ratio.ratio-16x9
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/GrmVEbrWBic', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+      hr.featurette-divider
+      h2 Semana Consci&ecirc;ncia Negra
+      #myCarousel.carousel.slide(data-bs-ride='carousel')
+        .carousel-indicators
+          button.active(type='button', data-bs-target='#myCarousel', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+          button(type='button', data-bs-target='#myCarousel', data-bs-slide-to='1', aria-label='Slide 2')
+          button(type='button', data-bs-target='#myCarousel', data-bs-slide-to='2', aria-label='Slide 3')
+          button(type='button', data-bs-target='#myCarousel', data-bs-slide-to='2', aria-label='Slide 4')
+        .carousel-inner
+          .carousel-item.active
+            img(src='/imagem-semana/foto-1.jpg', alt='', width='90%')
+          .carousel-item
+            img(src='/imagem-semana/foto-2.jpg', alt='', width='90%')
+            //
+              <div class="container">
+              <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+              </div>
+          .carousel-item
+            img(src='img-semana-consciencia/foto-3.jpg', alt='', width='90%')
+            //
+              <div class="container">
+              <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              </div>
+              </div>
+          .carousel-item
+            img(src='img-semana-consciencia/foto-4.jpg', alt='', width='90%')
+            //
+              <div class="container">
+              <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              </div>
+              </div>
+        button.carousel-control-prev(type='button', data-bs-target='#myCarousel', data-bs-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.visually-hidden Previous
+        button.carousel-control-next(type='button', data-bs-target='#myCarousel', data-bs-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.visually-hidden Next
+      // /END THE FEATURETTES
+      // /.container
+      hr.featurette-divider
+      // FOOTER
+      footer.container
+        p.float-end
+          a(href='#') Back to top
+        p
+          | &copy; 2017&ndash;2021 Company, Inc. &middot; 
+          a(href='#') Privacy
+          |  &middot; 
+          a(href='#') Terms
+    // Option 1: Bootstrap Bundle with Popper
+    script(src='/jquery/jquery.slim.min.js')
+    script(src='/popperjs/popper.min.js')
+    script(src='/bsjs/bootstrap.min.js')
