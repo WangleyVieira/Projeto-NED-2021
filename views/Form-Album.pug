@@ -1,0 +1,86 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // <script src="/JS/form-album.js"></script>
+  link(rel='stylesheet' href='/estilo/form-album-digital.css')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='/bscss/bootstrap.min.css')
+  title &Aacute;lbum Digital
+.container
+  h1 Cadastro de &Aacute;lbum Digital
+  form.row.g-3
+    .col-md-4
+      label.form-label(for='validationDefault01') Nome
+      input#nome.form-control(type='text' required='')
+    .col-md-4
+      label.form-label(for='validationDefault02') CPF Respons&aacute;vel, caso seja menor de idade, CPF dos pais
+      input#cpf.form-control(type='text' required='')
+    .col-md-4
+      label.form-label(for='validationDefaultUsername') email
+      .input-group
+        span#inputGroupPrepend2.input-group-text @
+        input#email.form-control(type='text' aria-describedby='inputGroupPrepend2' required='')
+    .col-md-3
+      label.form-label(for='validationDefault03') Cidade
+      input#cidade.form-control(type='text' required='')
+    .col-md-3
+      label.form-label(for='validationDefault03') Data Nascimento
+      input#dataNascimento.form-control(type='date' required='')
+    .col-md-3
+      label.form-label(for='validationDefault04') Estado
+      select#estado.form-select(required='')
+        option(selected='' disabled='' value='') Escolher...
+        option MS
+        option SP
+        option RJ
+        option RS
+    .col-md-3
+      label.form-label(for='validationDefault05') Telefone
+      input#telefone.form-control(type='text' required='')
+    #autorizacao.tab-pane.div-tab(role='tabpanel' aria-labelledby='autorizacao-tab')
+      .col-md-12
+        label.form-label(for='objetivos') Objetivos
+        textarea#objetivos.form-control(readonly='' type='text')
+          | O projeto tem como objetivo visibilizar a beleza a cultura e a ancestralidade negra existentes no Mato Grosso do Sul, historicamente apagados e fora dos padr&otilde;es est&eacute;ticos euroc&ecirc;ntricos.
+          | Oportunizar&aacute; assim, as discuss&otilde;es &eacute;tnico-raciais capazes de qualificar e encorajar as professoras e professores a trabalharem com a problem&aacute;tica da popula&ccedil;&atilde;o negra, em sala de aula, na tentativa de diminuir o arranjo da desigualdade existente no pa&iacute;s.
+          | Para isso, a partir das fotografias selecionadas para a mostra fotogr&aacute;fica, ir&aacute; se elaborar um &aacute;lbum de fotografias que ao ser finalizado, ser&aacute; direcionado para escolas p&uacute;blicas, com a inten&ccedil;&atilde;o de contribuir com o debate da Lei 10.639/03 que determina o ensino de Hist&oacute;ria e Cultura Afro-brasileira nas escolas.
+      .col-md-12
+        label.form-label(for='regras') Regras
+        textarea#regras.form-control(readonly='' type='text')
+          | &#xF5A4; Cada pessoa poder&aacute; participar com uma fotografia
+          | &#xF5A4; A fotografia deve ser no formato digital JPG/JPEG
+          | &#xF5A4; A fotografia poder&aacute; ser colorida ou preta e branco
+          | &#xF5A4; A t&eacute;cnica para cria&ccedil;&atilde;o &eacute; livre mas precisa seguir o tema Beleza Negra Resiste
+          | &#xF5A4; Cada pessoa s&oacute; poder&aacute; ser premiada uma &uacute;nica vez
+          | &#xF5A4; As fotografias ser&atilde;o selecionadas por um j&uacute;ri composto de pessoas pretas, que julgar&aacute; a beleza negra a partir dos elementos que permitir&atilde;o evidenciar as conex&otilde;es com as ra&iacute;zes negras, com a ancestralidade negra, com a di&aacute;spora negra, com as pequenas &Aacute;fricas que existem em cada pessoa negra que vive em Mato Grosso do Sul
+          | &#xF5A4; Toda fotografia deve ser encaminhada com a autoriza&ccedil;&atilde;o de uso de imagem. A UFMS e o IFMS reservam para si, desde j&aacute;, o direito incontest&aacute;vel de reproduzir as fotografias inscritas em seu material institucional a qualquer momento e por tempo indeterminado, dando os devidos cr&eacute;ditos ao fot&oacute;grafo.
+      .row
+        .col-md-6
+          label.form-label(for='validationDefault01') Titulo da Foto
+          input#tituloFoto.form-control(type='text' required='')
+        .col-md-6
+          label.form-label(for='validationDefault01') Nome da(o) Fot&oacute;grafa(o)
+          input#nomeFotografo.form-control(type='text' required='')
+      .col-md-12
+        label.form-label(for='nomeFoto') Foto
+        input#nomeFoto.form-control(type='file' name='nomeFoto')
+      .row.div-autorizacao
+        .col-md-12
+          textarea#objetivos.form-control(readonly='' type='text' style='height: 100px')
+            | Autorizo a Universidade Federal do Mato Grosso do Sul e o Instituto Federal do Mato Grosso do Sul, bem como a/o fot&oacute;grafa/o a utilizarem a minha imagem para fins de participa&ccedil;&atilde;o na mostra fotogr&aacute;fica &quot;Beleza Negra Resiste&quot;. Poder&atilde;o utiliz&aacute;-la na divulga&ccedil;&atilde;o de materiais impressos, audiovisuais e eletr&ocirc;nicos, sem fins lucrativos e tamb&eacute;m poder&aacute; ser utilizada por tempo indeterminado. Fica assim autorizada, de livre e espont&acirc;nea vontade, para os mesmos fins a cess&atilde;o de direitos de veicula&ccedil;&atilde;o, n&atilde;o recebendo para tanto qualquer tipo de remunera&ccedil;&atilde;o.
+            | Por meio desta autoriza&ccedil;&atilde;o, eu libero a UFMS e o IFMS, acima citados, seus representantes legais ou fornecedores, de futuros processos e queixas por viola&ccedil;&atilde;o de privacidade ou de direito de propriedade que eu poderia ter em rela&ccedil;&atilde;o a tal produ&ccedil;&atilde;o.
+            | Ao marcar o aceite da leitura do termo e autoriza&ccedil;&atilde;o da imagem, concordo com as regras e autoriza&ccedil;&atilde;o dispostas nesta p&aacute;gina.
+      .col-12
+        .form-check
+          input#dataAutorizacao.form-check-input(type='checkbox' value='' required='')
+          label.form-check-label(for='invalidCheck2')
+            | Li e concordo com os termos e privacidade
+    .col-12
+      button.btn.btn-primary(type='submit') Enviar
+    
+
+script(src='/jquery/jquery.slim.min.js')
+script(src='/popperjs/popper.min.js')
+script(src='/bsjs/bootstrap.min.js')
