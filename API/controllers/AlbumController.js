@@ -10,7 +10,10 @@ class AlbumController{
         try {
             //await: aguarda até receber a resposta do BD
             const todosOsAlbuns = await database.AlbunsNeds.findAll();
-            return res.status(200).json(todosOsAlbuns);
+
+           //return res.status(200).json(todosOsAlbuns); //teste de retorno no postman
+            
+            res.render('PaginaInicialLogin', { todosOsAlbuns });
         } catch (error) {
             return res.status(500).json(error.message);
         }

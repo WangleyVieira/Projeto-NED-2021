@@ -20,6 +20,8 @@ app.use('/ConhecerEquipe', express.static('./views/'));
 app.use('/ApresentacaoProjeto', express.static('./views/'));
 app.use('/PaginaInicial', express.static('./views/'));
 app.use('/PaginaInicialLogin', express.static('./views/'));
+app.use('/FormularioAlbum', express.static('./views/'));
+
 //app.use('', express.static(__dirname + ''));
 /**
  * Configuração da página 
@@ -49,8 +51,8 @@ app.get('/test', function(req, resp){
   })
 
 
-// /**
-//  * Rotas
+// // /**
+// //  * Rotas
 //  */
  const routes = require('./API/routers');
  routes(app);
@@ -77,8 +79,13 @@ app.get('/Login', function(req, resp){
 });
 
 //Area ADMIN, pagina inicial de login
-app.get('/PaginaInicialLogin', function(req, resp){
-    resp.render('PaginaInicialLogin')
+// app.get('/PaginaInicialLogin', function(req, resp){
+//     resp.render('PaginaInicialLogin')
+// });
+
+//Formulario album
+app.get('/FormularioAlbum', function(req, resp){
+    resp.render('Form-Album')
 });
 
 export default app;

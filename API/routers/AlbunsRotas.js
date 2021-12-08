@@ -6,7 +6,7 @@ const AlbumController = require('../controllers/AlbumController');
 
 const router = Router();
 //Iniciando o Router da express
-router.get('/AlbumNegritude', AlbumController.ListarAlbuns);
+router.get('/PaginaInicialLogin', AlbumController.ListarAlbuns);
 router.get('/AlbumNegritude/:id', AlbumController.pegaUmAlbum);
 router.post('/AlbumNegritude', AlbumController.criaAlbum);
 router.put('/AlbumNegritude/:id', AlbumController.atualizaAlbum);

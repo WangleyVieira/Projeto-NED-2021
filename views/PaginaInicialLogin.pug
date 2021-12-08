@@ -42,6 +42,40 @@ html(lang='en')
                 a.nav-link(href='#') Mostra Fotogr&aacute;fica
               li.nav-item
                 a.nav-link(href='') Sair
+
+    h2 Lista de Álbuns Cadastrados
+
+    table.table.table-sm
+            thead 
+                tr  
+                    th Id 
+                    th Nome 
+                    th CPF 
+                    th Email 
+                    th Cidade 
+                    th Data Nascimento 
+                    th Estado 
+                    th Telefone 
+                    th Titulo Foto 
+                    th Nome Fotografo 
+                    th Nome Foto 
+                    th Data Autorizacao 
+            tbody 
+                each albuns in todosOsAlbuns
+                    tr 
+                        td #{albuns.id}
+                        td #{albuns.nome}
+                        td #{albuns.cpf}
+                        td #{albuns.email}
+                        td #{albuns.cidade}
+                        td #{albuns.dataNascimento}
+                        td #{albuns.estado}
+                        td #{albuns.telefone}
+                        td #{albuns.tituloFoto}
+                        td #{albuns.nomeFotografo}
+                        td #{albuns.nomeFoto}
+                        td #{albuns.dataAutorizacao}
+                        
               
             
     main
