@@ -13,12 +13,14 @@ app.use('/jquery', express.static('./node_modules/jquery/dist'));
 app.use('/popperjs', express.static('./node_modules/@popperjs/core/dist/umd'));
 app.use('/estilo', express.static('./views/css')); //rotas de css
 app.use('/imagem', express.static('./views/img')); //rota de imagens
-
+app.use('/imagem-semana', express.static('./views/img-semana-consciencia'));
 
 app.use('/login', express.static('./views/'));
 app.use('/ConhecerEquipe', express.static('./views/'));
+app.use('/ApresentacaoProjeto', express.static('./views/'));
 app.use('/PaginaInicial', express.static('./views/'));
-app.use('', express.static(__dirname + ''));
+app.use('/PaginaInicialLogin', express.static('./views/'));
+//app.use('', express.static(__dirname + ''));
 /**
  * Configuração da página 
  */
@@ -63,10 +65,20 @@ app.get('/PaginaInicial', function(req, resp){
 app.get('/ConhecerEquipe', function(req, resp){
     resp.render('conhecaEquipe')
 });
+
+//apresentacao do projeto
+app.get('/ApresentacaoProjeto', function(req, resp){
+    resp.render('ApresentacaoProjeto')
+});
+
 //Login
 app.get('/Login', function(req, resp){
     resp.render('Login')
 });
 
+//Area ADMIN, pagina inicial de login
+app.get('/PaginaInicialLogin', function(req, resp){
+    resp.render('PaginaInicialLogin')
+});
 
 export default app;
