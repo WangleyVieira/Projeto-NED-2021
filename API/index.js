@@ -1,13 +1,17 @@
 const express = require("express");
 const app = express();
+//const bodyParser = require('body-parser');
 
-/**
- * Configuração do parser para requisições post
- */
-app.use(express.json());
-app.use(express.urlencoded({
-    extended: true
-}))
+
+// require('dotenv').config()
+
+// /**
+//  * Configuração do parser para requisições post
+//  */
+// app.use(express.json());
+// app.use(express.urlencoded({
+//     extended: true
+// }))
 
 /**
 * Colocar servidor no ar
@@ -27,6 +31,10 @@ app.listen(PORTA, function () {
      mensagem: 'Bem vinda!!'
  })); 
  */
+//  app.post('/', (req, res) => {
+//     res.json(req.body)
+//   })
+
 
  const routes = require('./routers');
  routes(app);

@@ -18,7 +18,7 @@ app.use('/imagem', express.static('./views/img')); //rota de imagens
 app.use('/login', express.static('./views/'));
 app.use('/ConhecerEquipe', express.static('./views/'));
 app.use('/PaginaInicial', express.static('./views/'));
-// app.use('', express.static(__dirname + ''));
+app.use('', express.static(__dirname + ''));
 /**
  * Configuração da página 
  */
@@ -37,10 +37,16 @@ app.get('/test', function(req, resp){
 /**
  * Configuração do parser para requisições post
  */
-//  app.use(express.json());
-//  app.use(express.urlencoded({
-//      extended: true
-//  }))
+ app.use(express.json());
+ app.use(express.urlencoded({
+     extended: true
+ }))
+
+ app.post('/', (req, res) => {
+    res.json(req.body)
+  })
+
+
 // /**
 //  * Rotas
 //  */

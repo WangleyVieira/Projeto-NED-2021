@@ -38,7 +38,13 @@ class UsuarioController {
     // }
 
     static async criaUsuario(req, res) {
+        
+        console.log("cheguei até aqui");
+
         const novoUsuario = req.body;
+
+        //console.log(req.body);
+        
         try{
 
             // UsuarioController.validaSenha(novoUsuario.senha);
@@ -46,6 +52,8 @@ class UsuarioController {
             // delete novoUsuario.senha;
             // novoUsuario["senha_hash"] = senhaHash;
             const novoUsuarioCriado = await database.Usuarios.create(novoUsuario);
+
+            console.log(novoUsuario);
 
             return res.status(200).json(novoUsuarioCriado);
         } catch (error) {
