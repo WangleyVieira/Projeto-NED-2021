@@ -9,15 +9,22 @@
 
       <link rel="stylesheet" href="/estilo/form-album-digital.css">
 
+      <script src="/JS/form-album.js"></script>
+
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   
+      <!-- API AUTENTICACAO -->
+      <script src="/bsjs/bootstrap.min.js"></script>
+      <script src="/popperjs/popper.min.js"></script>
+      <script src="/jquery/jquery.min.js"></script>
+
       <title>Álbum Digital</title>
     </head>
     <body>
         <div class="container">
             <H1>Cadastro de Álbum Digital</H1>
-        <form class="row g-3">
+        <form class="row g-3" name="dataForm" action="" method="POST" onsubmit="return validadeFormulario()">
             <div class="col-md-4">
               <label for="validationDefault01" class="form-label">Nome</label>
               <input type="text" class="form-control" id="nome" required>
