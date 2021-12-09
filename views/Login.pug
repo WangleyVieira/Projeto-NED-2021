@@ -7,6 +7,12 @@ html(lang='en')
     // Bootstrap CSS
     link(rel='stylesheet' href='/bscss/bootstrap.min.css')
     link(rel='stylesheet', href='/estilo/login.css')
+
+    script(src='/jquery/jquery.slim.min.js')
+    script(src='/popperjs/popper.min.js')
+    //- script(src='/bsjs/bootstrap.min.js')
+    script(src='/JS/AutenticacaoLogin.js')
+
     title Login
   body
     .container
@@ -19,19 +25,14 @@ html(lang='en')
             form
               .form-group
                 label(for='email') Email
-                input.form-control(type='email', name='email')
+                input#email.form-control(type='email' name='email')
               .form-group
                 label(for='password') Password
-                input.form-control(type='password', name='password')
-              //
-                <div class="form-group form-check">
-                <input type="checkbox" name="checkbox" class="form-check-input" id="checkbox">
-                <label class="form-check-label" for="checkbox">Remember Me</label>
-                </div>
-              //
-                <button class="btn btn-success">Login</button>
-                <button class="btn btn-primary">Cadastrar</button>
-          button.btn.btn-success Login
+                input#senha.form-control(type='password' name='senha')
+
+                input#enviar.btn.btn-success(type='button' name='enviar' value='Enviar')
+           
+          //- input#enviar.btn.btn-success(type='button' name='enviar' value='Enviar')
       script(src='/jquery/jquery.slim.min.js')
       script(src='/popperjs/popper.min.js')
       script(src='/bsjs/bootstrap.min.js')
