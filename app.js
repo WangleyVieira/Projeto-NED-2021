@@ -16,6 +16,8 @@ app.use('/estilo', express.static('./views/css')); //rotas de css
 app.use('/imagem', express.static('./views/img')); //rota de imagens
 app.use('/imagem-semana', express.static('./views/img-semana-consciencia'));
 
+app.use('/JS', express.static(__dirname + '/JS'));
+
 app.use('/login', express.static('./views/'));
 app.use('/ConhecerEquipe', express.static('./views/'));
 app.use('/ApresentacaoProjeto', express.static('./views/'));
@@ -23,7 +25,6 @@ app.use('/PaginaInicial', express.static('./views/'));
 app.use('/PaginaInicialLogin', express.static('./views/'));
 app.use('/FormularioAlbum', express.static('./views/'));
 
-//app.use('', express.static(__dirname + ''));
 /**
  * Configuração da página 
  */
@@ -76,7 +77,8 @@ app.get('/ApresentacaoProjeto', function(req, resp){
 
 //Login
 app.get('/Login', function(req, resp){
-    resp.render('Login')
+    resp.render('Login');
+    //resp.sendFile(__dirname + '/views/login.html');
 });
 
 //Area ADMIN, pagina inicial de login
