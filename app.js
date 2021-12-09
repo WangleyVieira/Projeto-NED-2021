@@ -3,7 +3,7 @@ import path from 'path';
 
 const app = express();
 
-
+require('dotenv').config()
 /**
  * Configuração estática
  */
@@ -79,9 +79,9 @@ app.get('/Login', function(req, resp){
 });
 
 //Area ADMIN, pagina inicial de login
-// app.get('/PaginaInicialLogin', function(req, resp){
-//     resp.render('PaginaInicialLogin')
-// });
+app.get('/PaginaInicialLogin', function(req, resp){
+    resp.render('PaginaInicialLogin')
+});
 
 //Formulario album
 app.get('/FormularioAlbum', function(req, resp){
