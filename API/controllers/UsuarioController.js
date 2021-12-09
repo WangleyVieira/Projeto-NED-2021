@@ -1,6 +1,6 @@
 const database = require('../models');
 const bcrypt = require('bcrypt');
-//const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 
 class UsuarioController {
 
@@ -40,9 +40,9 @@ class UsuarioController {
         const novoUsuario = req.body;
         try{
 
-            UsuarioController.validaSenha(novoUsuario.senha);
-            const senhaHash = await UsuarioController.gerarSenhaHash(novoUsuario.senha);
-            delete novoUsuario.senha;
+            UsuarioController.validaSenha(novoUsuario.senha_hash);
+            const senhaHash = await UsuarioController.gerarSenhaHash(novoUsuario.senha_hash);
+            delete novoUsuario.senha_hash;
             novoUsuario["senha_hash"] = senhaHash;
             const novoUsuarioCriado = await database.Usuarios.create(novoUsuario);
 
@@ -102,14 +102,14 @@ class UsuarioController {
 
     static async login(req, res) {
         const { email } = req.body;
-        const { senha } = req.body;
+        const { senha_hash } = req.body;
         try{
-            const usuario = await UsuarioController.pegaUmUsuarioPorEmail(email);
-            UsuarioController.verificaUsuario(usuario);
-            await UsuarioController.verificaSenha(senha,usuario.senha_hash);
-            const token = jwt.sign({ id: usuario.id }, process.env.CHAVE_JWT, { expiresIn: '1s' });
+            const users = await UsuarioController.pegaUmUsuarioPorEmail(email);
+            UsuarioController.verificaUsuario(users);
+            await UsuarioController.verificaSenha(senha_hash,users.senha_hash);
+            const token = jwt.sign({ id: users.id }, process.env.CHAVE_JWT, { expiresIn: '1s' });
             res.set('Authorization', token);
-            return res.status(200).json(usuario); 
+            return res.status(200).json(users); 
         } catch (error) {
             return res.status(401).json(error.message);
         }

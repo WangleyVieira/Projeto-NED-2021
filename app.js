@@ -4,6 +4,7 @@ import path from 'path';
 const app = express();
 
 require('dotenv').config()
+
 /**
  * Configuração estática
  */
